@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/icepahad"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/icepahad"
+            android:layout_toEndOf="@id/image1"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/icegirl"
+            android:layout_below="@id/image1"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/icepahad"
+            android:layout_toEndOf="@id/image3"
+            android:layout_below="@id/image2"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/level"
+            android:gravity="center"
+            android:textSize="@dimen/_30sdp"
+            android:textColor="@color/white"
+            android:text="1"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/one"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:layout_marginStart="@dimen/_120sdp"/>
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textSize="@dimen/_30sdp"
+            android:padding="@dimen/_20sdp"
+            android:backgroundTint="#1D8E22"
+            android:layout_marginTop="@dimen/_200sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_40sdp"/>
+
+</RelativeLayout>
